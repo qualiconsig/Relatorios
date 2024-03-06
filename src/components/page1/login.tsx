@@ -5,7 +5,7 @@ import { Box, Button, Flex, FormControl, Input, Text } from "@chakra-ui/react";
 import { echo } from "@/pages/api/req";
 import axios from "axios";
 
-import { Page } from "../components/page2/pagetotal";
+
 
 export const Login = () => {
   const [password, setPassword] = useState("");

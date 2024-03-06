@@ -12,10 +12,10 @@ export const Header = ({id}:any) => {
     <Box>
       <Box bg="#586367">
         <UnorderedList color={"#FFF"} display={'flex'} gap={20} listStyleType={'none'} h={50} justifyContent={'flex-end'} alignItems={'end'} mr={15}>
-          <List value={"Contrato novo"} link={"/pagetwo/Contrato novo"} ides={id}/>
-          <List value={"Portabilidade"} link={"/pagetwo/Portabilidade"} ides={id}/>
-          <List value={"Proposta"} link={"/pagetwo/Proposta"} ides={id}/>
-          <List value={"Portal vendas"} link={"/pagetwo/Portal vendas"} ides={id}/>
+          <List value={"Contrato novo"} link={"/send/Contrato novo"} ides={id}/>
+          <List value={"Portabilidade"} link={"/send/Portabilidade"} ides={id}/>
+          <List value={"Proposta"} link={"/send/Proposta"} ides={id}/>
+          <List value={"Portal vendas"} link={"/send/Portal vendas"} ides={id}/>
         </UnorderedList>
       </Box>
     </Box>
