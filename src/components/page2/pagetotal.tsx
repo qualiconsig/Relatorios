@@ -59,17 +59,18 @@ const pingecho = async () => {
               }
             </Flex>
             <Flex h={"44vh"} alignItems={"center"} flexDir={'column'} justify={'center'} align={'center'} >
-              <Text color={"#0066cc"} fontSize={'25px'} mb={20}>{id}</Text>
+              <Text color={"#0066cc"} mt={10} fontSize={'25px'} mb={20}>{id}</Text>
               <Flex flexDir={"column"} w={'60%'} >
                 <Button
                   border={"0"}
                   bg="#5D9AF5"
-                  p={20}
+                  p={10}
                   h={"40px"}
                   w={'auto'}
-                  mb={20}
+                  mb={10}
                   cursor={"pointer"}
                   borderRadius={13}
+                  _hover={{background: "blue.500"}}
                 >
                   {returned}
                 </Button>
@@ -77,10 +78,11 @@ const pingecho = async () => {
                 <Button
                   border={"0"}
                   bg="#5D9AF5"
-                  p={20}
+                  p={10}
                   h={"40px"}
                   borderRadius={13}
                   cursor={"pointer"}
+                  _hover={{background: "blue.500"}}
                   
                 >
                   {param}
