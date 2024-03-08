@@ -1,23 +1,29 @@
 import { Box, Flex, List, ListItem, UnorderedList } from "@chakra-ui/react";
 import { ListItemCom } from "./list";
+import { useEffect, useState } from "react";
 
 export const FilterDatas = ({selectedMonth}: any) => {
-  console.log(selectedMonth)
+  
+  const [selected, setSelected] = useState("Janeiro")
+  useEffect(() => {
+    setSelected(selectedMonth)
+  },[])
+  
   return (
     <Box>
       <Flex
         h={"80vh"}
         align={"center"}
-        justify={"space-between"}
+        justify={"center"}
         w={"50vw"}
         margin={"0 auto"}
       >
-        <Flex bg={"#DFE0FF"} borderRadius={14}>
-          
+        <Flex bg={"#F4F4F4"} borderRadius={14}>
           <Flex 
             h={"50vh"}
             justify={"space-around"}
             w={"60vw"}
+            pr={"20px"}
             color={"black"}
             align={'center'}
           >

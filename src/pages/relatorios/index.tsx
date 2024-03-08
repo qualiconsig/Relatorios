@@ -7,7 +7,7 @@ export default function Relatorio () {
 
   const [selectedMonth, setSelectedMonth] = useState(""); 
   return (
-    <Box bg="gray.600" h="100vh">
+    <Box bg="#DCDDE1" h="100vh">
       <HeaderLatorio setSelectedMonth={setSelectedMonth} /> 
       <Box>
         <FilterDatas selectedMonth={selectedMonth} /> 

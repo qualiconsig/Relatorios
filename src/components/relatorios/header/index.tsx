@@ -1,6 +1,7 @@
 // components/HeaderLatorio.js
 import { Box, Flex, Input, Select } from "@chakra-ui/react";
 import { useState } from "react";
+import { MdOutlineUpdate } from "react-icons/md";
 
 export const HeaderLatorio = ({ setSelectedMonth }:any) => {
 
@@ -23,7 +24,9 @@ export const HeaderLatorio = ({ setSelectedMonth }:any) => {
         borderRadius={14}
       >
         <Flex gap={20}>
-          <Select name="dates" bg="white" onChange={handleMonthSelect}>
+         <Flex justify={'center'} align={'center'} w={'50%'}>
+          <Select name="dates" bg="white" onChange={handleMonthSelect} >
+          
             <option value="Janeiro">Janeiro</option>
             <option value="Fevereiro">Fevereiro</option>
             <option value="Março">Março</option>
@@ -36,12 +39,16 @@ export const HeaderLatorio = ({ setSelectedMonth }:any) => {
             <option value="Outubro">Outubro</option>
             <option value="Novembro">Novembro</option>
             <option value="Dezembro">Dezembro</option>
+            <option value="1 ano">1 Ano </option>
           </Select>
+          <MdOutlineUpdate fontSize={30} />
+          </Flex>
           <Input
             type="text"
             name="name"
             placeholder="Nome gerente"
             bg="white"
+            
           />
         </Flex>
         {/* Outros elementos do cabeçalho */}
