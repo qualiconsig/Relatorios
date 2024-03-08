@@ -38,7 +38,7 @@ export const FilterDatas = ({selectedMonth}: any) => {
             </Box>
             <Box>
               <UnorderedList listStyleType={"none"}>
-                <ListItemCom value={selectedMonth}/>
+                <ListItemCom value={selectedMonth} rest="#06877F"/>
                 <ListItemCom value={"176"}/>
                 <ListItemCom value={"199.585.900"}/>
                 <ListItemCom value={"79.530.200"}/>
