@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 
 import { echo } from "@/pages/api/req";
 import { useParams } from "next/navigation";
+import { ContratoNovo } from "../contratoNovo";
 
 export const Page = ({id}: any) => {
   
@@ -10,6 +11,7 @@ const [ide, setIde] = useState<any>()
 const [param, setparam] = useState<any>()
 const [returned, setReturnerd] = useState<any>()
 const [status, setStatus] = useState<any>()
+const [numAtual, setAtual] = useState(1)
 
 function verifyParam () {
   setIde(id)
@@ -45,6 +47,13 @@ const pingecho = async () => {
   verifyParam()
   pingecho()
  },[id])
+
+ const nextpage = () => {
+  setAtual(numAtual + 1)
+ }
+ const backpage = () => {
+  setAtual(numAtual - 1)
+ }
 
   return (
     <Box h={"100vh"} bg="#ECECEC">
@@ -92,10 +101,10 @@ const pingecho = async () => {
             </Flex>
           </Box>
         </Box>
-        <Flex bg={'#E7E7E7'} w={'50vw'} justify={'center'} border={'1px solid #cccc'} borderRadius={14} boxShadow={'0 0 3px #1b1b1bcc'}>
-          <Flex flexDir={'column'} justify={'center'} align={'center'}  >
+        <Flex bg={'#E7E7E7'} w={'50vw'} h={'100vh'} justify={'center'} border={'1px solid #cccc'} borderRadius={14} boxShadow={'0 0 3px #1b1b1bcc'}>
+          <Flex flexDir={'column'} justify={'center'} align={'center'} >
             <Text color={'green'} mb={20} >Proposta Recebida</Text>
-            <Text>Id Transaction: 9166440c-5132-4db7-952d-5c9298423336</Text>
+              <ContratoNovo/>
           </Flex>
         </Flex>
       </Box>

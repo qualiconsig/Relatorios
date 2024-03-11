@@ -28,15 +28,12 @@ export const FilterDatas = ({selectedMonth}: any) => {
             align={'center'}
           >
             <Box>
-              
                 <ListItemCom value={"Data"}  rest={"green"} secondValue={selectedMonth}/>
                 <ListItemCom value={"Logados"} secondValue={"176"}/>
                 <ListItemCom value={"Vendas Totais"} secondValue={"199.585.900"}/>
                 <ListItemCom value={"Enviados Cip"} secondValue={"79.530.200"}/>
                 <ListItemCom value={"%Cip"} secondValue={"55%"}/>
-             
             </Box>
-            
 
             <Box ml={20}>
             

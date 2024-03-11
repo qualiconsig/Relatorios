@@ -3,7 +3,7 @@ import { Box, Flex, Input, Select } from "@chakra-ui/react";
 import { useState } from "react";
 import { MdOutlineUpdate } from "react-icons/md";
 
-export const HeaderLatorio = ({ setSelectedMonth }:any) => {
+export const HeaderLatorio = ({ setSelectedMonth, how }:any) => {
 
   const handleMonthSelect = (event:any) => {
     const month = event?.target.value;
@@ -43,6 +43,7 @@ export const HeaderLatorio = ({ setSelectedMonth }:any) => {
           </Select>
           <MdOutlineUpdate fontSize={30} />
           </Flex>
+          {how === "Salatiel" && 
           <Input
             type="text"
             name="name"
@@ -50,7 +51,9 @@ export const HeaderLatorio = ({ setSelectedMonth }:any) => {
             bg="white"
             
           />
+        }
         </Flex>
+        
         {/* Outros elementos do cabeçalho */}
       </Flex>
     </Box>
