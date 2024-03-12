@@ -4,8 +4,10 @@ import { useEffect, useState } from "react";
 import { echo } from "@/pages/api/req";
 import { useParams } from "next/navigation";
 import { ContratoNovo } from "../contratoNovo";
+import { useRouter } from "next/router";
 
 export const Page = ({id}: any) => {
+  
   
 const [ide, setIde] = useState<any>()
 const [param, setparam] = useState<any>()
@@ -103,8 +105,9 @@ const pingecho = async () => {
         </Box>
         <Flex bg={'#E7E7E7'} w={'50vw'} h={'100vh'} justify={'center'} border={'1px solid #cccc'} borderRadius={14} boxShadow={'0 0 3px #1b1b1bcc'}>
           <Flex flexDir={'column'} justify={'center'} align={'center'} >
-            <Text color={'green'} mb={20} >Proposta Recebida</Text>
+            {id === "Contrato novo" &&
               <ContratoNovo/>
+            }
           </Flex>
         </Flex>
       </Box>

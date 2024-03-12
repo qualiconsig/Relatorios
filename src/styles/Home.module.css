@@ -170,7 +170,10 @@
     position: fixed;
     width: 100%;
   }
+  input {
 
+    background: '#fff';
+  }
   .description p {
     align-items: center;
     inset: 0 0 auto;
