@@ -47,7 +47,7 @@ export function ContratoNovo() {
       {numAtual == 1 && (
         
         <BoxInput>
-            <Input bg={'white'} type="text" placeholder="CPF" maxLength={11} {...register('cpf')} />
+            <Input  type="text" placeholder="CPF" maxLength={11} {...register('cpf')} />
             <Select>
               <option value={"Inss"} {...register('inss')}>INNS</option>
               <option value={"0"} {...register('0')}>0</option>
