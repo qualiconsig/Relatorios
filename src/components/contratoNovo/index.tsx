@@ -69,9 +69,9 @@ export function ContratoNovo() {
             <option value={"Divorciado(a)"} {...register('divorciado')}>Divorciado(a)</option>
             <option value={"Viuovo(a)"} {...register('viuvo')}>Viuvo(a)</option>
           </Select>
-          <Input bg={'white'} type="email" placeholder="email" {...register('email')}/>
-          <Input bg={'white'} type="number" placeholder="celular" {...register('celular')}/>
-          <Input  bg={'white'} type="number" placeholder="Telefone" {...register('telefone')}/>
+          <Input  type="email" placeholder="email" {...register('email')}/>
+          <Input  type="number" placeholder="celular" {...register('celular')}/>
+          <Input   type="number" placeholder="Telefone" {...register('telefone')}/>
         
           
         </BoxInput>
@@ -79,15 +79,15 @@ export function ContratoNovo() {
       {numAtual == 3 && (
         <BoxInput>
          
-            <Input bg='#FFF' type="number" placeholder="exemplo brasil 1058" {...register('cod pais')} />
-            <Input bg='#FFF'  type="text" placeholder="uf"  {...register('uf')}/>
-            <Input bg='#FFF'  type="text" placeholder="codigo municipio ibge"  {...register('codigo municipio')}/>
-            <Input bg='#FFF'  type="text" placeholder="Cep"  {...register('cep')}/>
-            <Input bg='#FFF'  type="text" placeholder="endereco" {...register('endereco')} />
-            <Input bg='#FFF'  type="text" placeholder="numero" {...register('numero')}/>
-            <Input bg='#FFF'  type="text" placeholder="complemento"{...register('complemetno')} />
-            <Input bg='#FFF'  type="text" placeholder="Bairro" {...register('Bairro')}/>
-            <Input bg='#FFF'  type="text" placeholder="Uf"{...register('Uf')} />
+            <Input  type="number" placeholder="exemplo brasil 1058" {...register('cod pais')} />
+            <Input  type="text" placeholder="uf"  {...register('uf')}/>
+            <Input   type="text" placeholder="codigo municipio ibge"  {...register('codigo municipio')}/>
+            <Input   type="text" placeholder="Cep"  {...register('cep')}/>
+            <Input   type="text" placeholder="endereco" {...register('endereco')} />
+            <Input   type="text" placeholder="numero" {...register('numero')}/>
+            <Input   type="text" placeholder="complemento"{...register('complemetno')} />
+            <Input   type="text" placeholder="Bairro" {...register('Bairro')}/>
+            <Input   type="text" placeholder="Uf"{...register('Uf')} />
             
          
         </BoxInput>
@@ -95,9 +95,9 @@ export function ContratoNovo() {
       {numAtual === 4 && (
         <BoxInput>
          
-          <Input bg='#FFF' type="text" placeholder="Cargo" />
-          <Input bg='#FFF' type="text" placeholder="telefone Comercial" />
-          <Input bg='#FFF' type="text" placeholder="email Profissional" />
+          <Input  type="text" placeholder="Cargo" />
+          <Input  type="text" placeholder="telefone Comercial" />
+          <Input  type="text" placeholder="email Profissional" />
           <Checkbox>Cidadão Norte americano </Checkbox>
           <Checkbox>pessoa Politicamente Exposta</Checkbox>
         
@@ -106,11 +106,11 @@ export function ContratoNovo() {
       )}
       {numAtual == 5 && (
         <BoxInput >
-          <Input bg='#FFF' type="text" placeholder="Tabela Juros" />
-          <Input bg='#FFF' type="number" placeholder="Numero Parcelas" />
-          <Input bg='#FFF' type="number" placeholder="taxa" />
-          <Input bg='#FFF' type="number" placeholder="Valor Parcela" />
-          <Input bg='#FFF' type="number" placeholder="Valor Beneficio" />
+          <Input  type="text" placeholder="Tabela Juros" />
+          <Input  type="number" placeholder="Numero Parcelas" />
+          <Input  type="number" placeholder="taxa" />
+          <Input  type="number" placeholder="Valor Parcela" />
+          <Input  type="number" placeholder="Valor Beneficio" />
           <Button type="submit" >enviar<IoIosArrowForward />{" "}</Button>
         </BoxInput>
         
