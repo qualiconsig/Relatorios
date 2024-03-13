@@ -67,7 +67,7 @@ export function ContratoNovo() {
             <option value={"Casado(a)"} {...register('casado')}>Casado(a)</option>
             <option value={"Solteiro(a)"} {...register('solteiro')}>Solteiro(a)</option>
             <option value={"Divorciado(a)"} {...register('divorciado')}>Divorciado(a)</option>
-            <option value={"Viuovo(a)"} {...register('viuvo')}>Viuvo(a)</option>
+            <option value={"Viuvo(a)"} {...register('viuvo')}>Viuvo(a)</option>
           </Select>
           <Input  type="email" placeholder="email" {...register('email')}/>
           <Input  type="number" placeholder="celular" {...register('celular')}/>
