@@ -13,3 +13,11 @@ input {
 
   background: '#fff';
 }
+
+.box {
+  width: 50%;
+  height: 50%;
+  
+  background: var(--accent);
+ 
+}

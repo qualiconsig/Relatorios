@@ -10,16 +10,25 @@ import { Box, Flex } from '@chakra-ui/react';
 const Loading = () => {
   return (
     <Flex justify={'center'} flexDir={'column'} align={'center'}>
-      <motion.h1
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-      >
-        <Box h={'50%'} w={"50%"} margin={'0 auto'}>
-         <Image alt='qualiconsig' src={qu}/>
-        </Box>
-       
-      </motion.h1>
+     <motion.div
+      className="box"
+      initial={{ opacity: 0, scale: 0.5 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{
+        duration: 0.3,
+        ease: [0, 0.71, 0.2, 1.01],
+        scale: {
+          type: "spring",
+          damping: 5,
+          stiffness: 100,
+          restDelta: 0.001
+        }
+      }}
+    >
+      <Box>
+        <Image alt='Qualiconsig' src={qu}/>
+      </Box>
+    </motion.div>
       <div>
       <motion.div
         style={{
@@ -32,7 +41,9 @@ const Loading = () => {
       >
         <Image alt='carregando' src={load}/>
       </motion.div>
+     
     </div>
+    
     </Flex>
   );
 };
