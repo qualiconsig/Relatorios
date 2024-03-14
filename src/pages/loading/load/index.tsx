@@ -3,17 +3,17 @@ import { OrbitControls } from "@react-three/drei";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { useEffect, useRef, useState } from "react";
 
-const Sphere = ({ position, size, color }) => {
-  const ref = useRef();
+const Sphere = ({ position, size, color }:any) => {
+  const ref = useRef<any>();
 
   const [isHovered, setisHovered] = useState(false);
 
   useFrame((state, delta) => {
-    // Faz o círculo girar
-    ref.current.rotation.x += 0.01;
-    ref.current.rotation.y += 0.01;
+    if (ref.current ) {
+      ref.current.rotation.x += 0.01;
+      ref.current.rotation.y += 0.01;
+    }
 
-    // Faz o círculo crescer e diminuir em looping
    
   });
 
